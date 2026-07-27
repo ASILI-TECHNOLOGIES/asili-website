@@ -551,6 +551,24 @@ main {
   align-items: stretch;
 }
 
+.pricing-grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.pricing-grid-4 .pricing-card {
+  padding: 1.3rem;
+}
+
+.pricing-grid-4 .pricing-card h3 {
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+}
+
+@media (max-width: 1199px) {
+  .pricing-grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .pricing-card {
   display: flex;
   flex-direction: column;
