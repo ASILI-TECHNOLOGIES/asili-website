@@ -52,48 +52,101 @@
     <section class="section-space">
       <div class="container">
         <span class="eyebrow reveal">Product suite</span>
-        <div class="row g-4 mt-1">
-          <div class="col-md-6">
-            <article class="feature-card tall-card reveal">
-              <span class="card-index">01</span>
+        <h2 class="section-title reveal reveal-delay-1 mb-4">Explore what each system covers.</h2>
+        <div class="module-explorer mt-1">
+          <div class="module-tabs nav" role="tablist">
+            <button class="module-tab active reveal" data-bs-toggle="pill" data-bs-target="#mod-pos" type="button" role="tab" aria-selected="true">
+              <span class="card-index">01</span> ASILI POS
+            </button>
+            <button class="module-tab reveal reveal-delay-1" data-bs-toggle="pill" data-bs-target="#mod-hrms" type="button" role="tab" aria-selected="false">
+              <span class="card-index">02</span> HRMS
+            </button>
+            <button class="module-tab reveal reveal-delay-2" data-bs-toggle="pill" data-bs-target="#mod-mfg" type="button" role="tab" aria-selected="false">
+              <span class="card-index">03</span> Manufacturing systems
+            </button>
+            <button class="module-tab reveal reveal-delay-3" data-bs-toggle="pill" data-bs-target="#mod-hosp" type="button" role="tab" aria-selected="false">
+              <span class="card-index">04</span> Hospital operations
+            </button>
+            <button class="module-tab reveal" data-bs-toggle="pill" data-bs-target="#mod-retail" type="button" role="tab" aria-selected="false">
+              <span class="card-index">05</span> Retail and distribution
+            </button>
+            <button class="module-tab reveal reveal-delay-1" data-bs-toggle="pill" data-bs-target="#mod-custom" type="button" role="tab" aria-selected="false">
+              <span class="card-index">06</span> Custom ERP implementations
+            </button>
+          </div>
+
+          <div class="tab-content module-panels reveal reveal-delay-1">
+            <div class="tab-pane fade show active" id="mod-pos" role="tabpanel">
+              <span class="icon-badge lg"><i class="bi bi-shop-window"></i></span>
               <h3>ASILI POS</h3>
               <p>A clean point-of-sale product for Tanzanian retailers who need fast checkout, live inventory, staff control, sales dashboards, and reliable branch reporting.</p>
-            </article>
-          </div>
-          <div class="col-md-6">
-            <article class="feature-card tall-card reveal reveal-delay-1">
-              <span class="card-index">02</span>
+              <ul class="check-list">
+                <li><i class="bi bi-check2"></i> Fast checkout</li>
+                <li><i class="bi bi-check2"></i> Live inventory tracking</li>
+                <li><i class="bi bi-check2"></i> Staff-level access control</li>
+                <li><i class="bi bi-check2"></i> Sales dashboards</li>
+                <li><i class="bi bi-check2"></i> Reliable branch reporting</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="mod-hrms" role="tabpanel">
+              <span class="icon-badge lg"><i class="bi bi-people"></i></span>
               <h3>HRMS</h3>
               <p>Staff records, attendance, payroll processing, leave management, and performance tracking in one system — built to simplify workforce management as teams scale.</p>
-            </article>
-          </div>
-          <div class="col-md-6">
-            <article class="feature-card tall-card reveal reveal-delay-2">
-              <span class="card-index">03</span>
+              <ul class="check-list">
+                <li><i class="bi bi-check2"></i> Staff records</li>
+                <li><i class="bi bi-check2"></i> Attendance tracking</li>
+                <li><i class="bi bi-check2"></i> Payroll processing</li>
+                <li><i class="bi bi-check2"></i> Leave management</li>
+                <li><i class="bi bi-check2"></i> Performance tracking</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="mod-mfg" role="tabpanel">
+              <span class="icon-badge lg"><i class="bi bi-gear-wide-connected"></i></span>
               <h3>Manufacturing systems</h3>
               <p>Material planning, production orders, costing, quality checkpoints, and finished goods visibility for factories that need tighter execution.</p>
-            </article>
-          </div>
-          <div class="col-md-6">
-            <article class="feature-card tall-card reveal reveal-delay-3">
-              <span class="card-index">04</span>
+              <ul class="check-list">
+                <li><i class="bi bi-check2"></i> Material planning</li>
+                <li><i class="bi bi-check2"></i> Production orders</li>
+                <li><i class="bi bi-check2"></i> Costing</li>
+                <li><i class="bi bi-check2"></i> Quality checkpoints</li>
+                <li><i class="bi bi-check2"></i> Finished goods visibility</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="mod-hosp" role="tabpanel">
+              <span class="icon-badge lg"><i class="bi bi-heart-pulse"></i></span>
               <h3>Hospital operations</h3>
               <p>Patient billing, pharmacy inventory, service capture, procurement tracking, and financial oversight for hospitals and clinics.</p>
-            </article>
-          </div>
-          <div class="col-md-6">
-            <article class="feature-card tall-card reveal">
-              <span class="card-index">05</span>
+              <ul class="check-list">
+                <li><i class="bi bi-check2"></i> Patient billing</li>
+                <li><i class="bi bi-check2"></i> Pharmacy inventory</li>
+                <li><i class="bi bi-check2"></i> Service capture</li>
+                <li><i class="bi bi-check2"></i> Procurement tracking</li>
+                <li><i class="bi bi-check2"></i> Financial oversight</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="mod-retail" role="tabpanel">
+              <span class="icon-badge lg"><i class="bi bi-truck"></i></span>
               <h3>Retail and distribution</h3>
               <p>Inventory movement, purchasing, customer accounts, multi-branch performance, and daily management reports for fast-moving businesses.</p>
-            </article>
-          </div>
-          <div class="col-md-6">
-            <article class="feature-card tall-card reveal reveal-delay-1">
-              <span class="card-index">06</span>
+              <ul class="check-list">
+                <li><i class="bi bi-check2"></i> Inventory movement</li>
+                <li><i class="bi bi-check2"></i> Purchasing</li>
+                <li><i class="bi bi-check2"></i> Customer accounts</li>
+                <li><i class="bi bi-check2"></i> Multi-branch performance</li>
+                <li><i class="bi bi-check2"></i> Daily management reports</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="mod-custom" role="tabpanel">
+              <span class="icon-badge lg"><i class="bi bi-tools"></i></span>
               <h3>Custom ERP implementations</h3>
               <p>Where off-the-shelf modules don't fit, we design and build tailored workflows, integrations, and reporting around your exact business processes and approval structures.</p>
-            </article>
+              <ul class="check-list">
+                <li><i class="bi bi-check2"></i> Tailored workflows</li>
+                <li><i class="bi bi-check2"></i> System integrations</li>
+                <li><i class="bi bi-check2"></i> Custom reporting</li>
+                <li><i class="bi bi-check2"></i> Exact-process approval structures</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -192,6 +245,73 @@
             </ul>
             <a class="btn btn-outline-brand w-100" href="contact.html">Call for consultation</a>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space">
+      <div class="container">
+        <div class="row g-4 align-items-end mb-4 mb-lg-5">
+          <div class="col-lg-8">
+            <span class="eyebrow reveal">Frequently asked</span>
+            <h2 class="section-title reveal reveal-delay-1">Questions we hear before a rollout.</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="accordion faq-accordion reveal reveal-delay-1" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                    What happens after I choose a plan?
+                  </button>
+                </h3>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">We follow the same delivery model on every rollout: assess the business and current workflows, configure the system around your teams and approvals, then train your staff and stay present after launch to strengthen adoption.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                    None of the ASILI POS tiers fit my business exactly — what then?
+                  </button>
+                </h3>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">That's what the Enterprise tier and our custom ERP implementations are for. For chains, wholesalers, and complex operations, we design custom roles, integrations, and reporting around your exact process — call us for a consultation instead of forcing a standard plan.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                    Do you support us after go-live?
+                  </button>
+                </h3>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Yes. We remain available after go-live because the real test of a system starts when teams use it every day — support and optimization continue as change requests and reporting needs come up.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                    Which industries do you build for?
+                  </button>
+                </h3>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Retail stores and supermarkets, manufacturing and processing, hospitals and clinics, distributors and wholesalers, hospitality and service brands, and growing multi-branch businesses.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                    Can I move to a different pricing tier later?
+                  </button>
+                </h3>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Yes — as your outlets, users, or reporting needs grow, you can move up from Starter through Growth and Premium, or into a custom Enterprise plan. Get in touch when you're ready and we'll handle the transition.</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
