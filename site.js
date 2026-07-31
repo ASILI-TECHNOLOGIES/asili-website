@@ -67,6 +67,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  document.querySelectorAll('[data-plan-toggle]').forEach((toggle) => {
+    const target = document.querySelector(toggle.getAttribute('data-bs-target'));
+    const label = toggle.querySelector('.plan-toggle-label');
+
+    if (!target || !label) {
+      return;
+    }
+
+    target.addEventListener('show.bs.collapse', () => {
+      label.textContent = 'Show less';
+    });
+
+    target.addEventListener('hide.bs.collapse', () => {
+      label.textContent = 'Read more';
+    });
+  });
+
   document.querySelectorAll('[data-mail-form]').forEach((form) => {
     form.addEventListener('submit', (event) => {
       event.preventDefault();

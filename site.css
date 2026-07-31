@@ -615,6 +615,90 @@ main {
   background: var(--green-deep);
 }
 
+.plan-toggle {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 0.4rem;
+  margin: -0.2rem 0;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(4, 27, 52, 0.03);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--navy-soft);
+  cursor: pointer;
+  transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease,
+    transform 0.18s ease, box-shadow 0.25s ease;
+}
+
+.plan-toggle:hover {
+  background: rgba(166, 255, 132, 0.2);
+  border-color: rgba(132, 223, 99, 0.55);
+  color: var(--navy);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(4, 27, 52, 0.1);
+}
+
+.plan-toggle:active {
+  transform: translateY(0) scale(0.96);
+  box-shadow: none;
+}
+
+.plan-toggle:focus-visible {
+  outline: 2px solid var(--green-deep);
+  outline-offset: 2px;
+}
+
+.plan-toggle[aria-expanded="true"] {
+  background: rgba(166, 255, 132, 0.24);
+  border-color: rgba(132, 223, 99, 0.55);
+  color: var(--navy);
+}
+
+.plan-toggle .bi {
+  font-size: 0.85em;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.plan-toggle[aria-expanded="true"] .bi {
+  transform: rotate(180deg);
+}
+
+.plan-details ul {
+  padding-top: 0.3rem;
+}
+
+.plan-details:not(.show) ul {
+  opacity: 0;
+}
+
+.plan-details.collapsing ul,
+.plan-details.show ul {
+  opacity: 1;
+  transition: opacity 0.3s ease 0.08s;
+}
+
+.plan-details ul li {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.plan-details:not(.show):not(.collapsing) ul li {
+  transform: translateY(-3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plan-toggle,
+  .plan-toggle .bi,
+  .plan-details ul,
+  .plan-details ul li {
+    transition: none !important;
+  }
+}
+
 .pricing-card .btn {
   margin-top: auto;
 }
